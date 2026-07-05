@@ -1,19 +1,4 @@
 # 🔐 Secure Firmware Update Mechanism for IoT Devices
-| Project | Status |
-|---------|--------|
-| Language | Python |
-| Framework | Flask |
-| Security | RSA, SHA-256, TLS |
-| Platform | Kali Linux |
-| License | MIT |
-
-![Python](https://img.shields.io/badge/Python-3.x-blue)
-![Flask](https://img.shields.io/badge/Flask-Web%20Server-black)
-![IoT Security](https://img.shields.io/badge/IoT-Security-green)
-![TLS](https://img.shields.io/badge/TLS-HTTPS-success)
-![License](https://img.shields.io/badge/License-MIT-yellow)
-
----
 Firmware Developer
         │
         ▼
@@ -36,6 +21,24 @@ Verify Signature
         │
         ▼
 Install Firmware
+
+---
+
+| Project | Status |
+|---------|--------|
+| Language | Python |
+| Framework | Flask |
+| Security | RSA, SHA-256, TLS |
+| Platform | Kali Linux |
+| License | MIT |
+
+![Python](https://img.shields.io/badge/Python-3.x-blue)
+![Flask](https://img.shields.io/badge/Flask-Web%20Server-black)
+![IoT Security](https://img.shields.io/badge/IoT-Security-green)
+![TLS](https://img.shields.io/badge/TLS-HTTPS-success)
+![License](https://img.shields.io/badge/License-MIT-yellow)
+
+---
 
 ## 📖 Project Overview
 
