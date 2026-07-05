@@ -1,4 +1,11 @@
-# Secure Firmware Update Mechanism for IoT Devices
+# 🔐 Secure Firmware Update Mechanism for IoT Devices
+| Project | Status |
+|---------|--------|
+| Language | Python |
+| Framework | Flask |
+| Security | RSA, SHA-256, TLS |
+| Platform | Kali Linux |
+| License | MIT |
 
 ![Python](https://img.shields.io/badge/Python-3.x-blue)
 ![Flask](https://img.shields.io/badge/Flask-Web%20Server-black)
@@ -8,7 +15,7 @@
 
 ---
 
-## Project Overview
+## 📖 Project Overview
 
 This project demonstrates the implementation of a secure firmware update mechanism for IoT devices using modern security practices. It ensures that only trusted firmware is installed by combining cryptographic verification, secure communication, access control, audit logging, and firmware recovery techniques.
 
@@ -16,7 +23,7 @@ The project was developed as part of my Cybersecurity On-the-Job Training (OJT) 
 
 ---
 
-## Objectives
+## 🎯 Objectives
 
 - Verify firmware authenticity using RSA Digital Signatures
 - Validate firmware integrity using SHA-256 hashing
@@ -28,7 +35,7 @@ The project was developed as part of my Cybersecurity On-the-Job Training (OJT) 
 
 ---
 
-## Technologies Used
+## 🛠️ Technologies Used
 
 ### Programming
 
@@ -51,7 +58,7 @@ The project was developed as part of my Cybersecurity On-the-Job Training (OJT) 
 
 ---
 
-## Repository Structure
+## 📁 Repository Structure
 
 ```text
 secure-firmware-update-iot/
@@ -87,7 +94,7 @@ secure-firmware-update-iot/
 
 ---
 
-## Security Features Implemented
+## 🛡️ Security Features Implemented
 
 - RSA Key Generation
 - Firmware Digital Signature Verification
@@ -100,49 +107,49 @@ secure-firmware-update-iot/
 - Recovery Mode
 
 ---
-# 📸 Key Project Screenshots
+## 📸 Key Project Screenshots
 
-## RSA Key Generation
+### 🔑 RSA Key Generation
 
 ![RSA Key Generation](evidence/RSA_Key_Generation/01_key_generation.png)
 
 ---
 
-## SHA-256 Verification
+### 🔍 SHA-256 Verification
 
 ![SHA-256 Verification](evidence/SHA256_Verification/01_sha256_verification.png)
 
 ---
 
-## Firmware Signature Verification
+### ✍️ Firmware Signature Verification
 
 ![Signature Verification](evidence/Signature_Verification/01_verified_ok.png)
 
 ---
 
-## TLS Certificate Generation
+### 🔒 TLS Certificate Generation
 
 ![TLS Certificate](evidence/TLS_Certificates/01_tls_certificate_generation.png)
 
 ---
 
-## Flask HTTPS Server
+### 🌐 Flask HTTPS Server
 
 ![Flask Server](evidence/Flask_Server/01_server_running.png)
 
 ---
 
-## Rollback Protection
+### 🛡️ Rollback Protection
 
 ![Rollback Protection](evidence/Rollback_Protection/02_rollback_protection.png)
 
 ---
 
-## RBAC Simulation
+### 👥 RBAC Simulation
 
 ![RBAC](evidence/RBAC/01_rbac_simulation.png)
 
-## Testing & Validation
+## 🧪 Testing & Validation
 
 The project includes practical testing and validation for:
 
@@ -164,7 +171,7 @@ Supporting screenshots are available in the **evidence/** directory.
 
 ---
 
-## Challenges Faced 
+## ⚠️ Challenges Faced
 
 During this project I worked through several practical challenges including:
 
@@ -176,7 +183,7 @@ During this project I worked through several practical challenges including:
 
 ---
 
-## Key Learning Outcomes
+## 🎓 Key Learning Outcomes
 
 This project strengthened my practical understanding of:
 
@@ -190,7 +197,7 @@ This project strengthened my practical understanding of:
 
 ---
 
-## Future Improvements
+## 🚀 Future Improvements
 
 - Secure Boot Integration
 - ECC-based Digital Signatures
@@ -201,7 +208,7 @@ This project strengthened my practical understanding of:
 
 ---
 
-## Author
+## 👨‍💻 Author
 
 **Mohammad Haji**
 
