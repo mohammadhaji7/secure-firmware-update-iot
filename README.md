@@ -60,6 +60,14 @@ The project was developed as part of my Cybersecurity On-the-Job Training (OJT) 
 
 ---
 
+## 🏗️ Project Architecture
+
+The diagram below illustrates the secure firmware update workflow implemented in this project.
+
+![Project Architecture](docs/architecture.png)
+
+---
+
 ## 🛠️ Technologies Used
 
 ### Programming
