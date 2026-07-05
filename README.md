@@ -100,6 +100,47 @@ secure-firmware-update-iot/
 - Recovery Mode
 
 ---
+# 📸 Key Project Screenshots
+
+## RSA Key Generation
+
+![RSA Key Generation](evidence/RSA_Key_Generation/01_key_generation.png)
+
+---
+
+## SHA-256 Verification
+
+![SHA-256 Verification](evidence/SHA256_Verification/01_sha256_verification.png)
+
+---
+
+## Firmware Signature Verification
+
+![Signature Verification](evidence/Signature_Verification/01_verified_ok.png)
+
+---
+
+## TLS Certificate Generation
+
+![TLS Certificate](evidence/TLS_Certificates/01_tls_certificate_generation.png)
+
+---
+
+## Flask HTTPS Server
+
+![Flask Server](evidence/Flask_Server/01_server_running.png)
+
+---
+
+## Rollback Protection
+
+![Rollback Protection](evidence/Rollback_Protection/02_rollback_protection.png)
+
+---
+
+## RBAC Simulation
+
+![RBAC](evidence/RBAC/01_rbac_simulation.png)
 
 ## Testing & Validation
 
