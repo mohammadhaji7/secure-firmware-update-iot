@@ -1,192 +1,174 @@
 # Secure Firmware Update Mechanism for IoT Devices
 
-## Overview
-
-This project demonstrates the implementation of a secure firmware update mechanism for IoT devices using cryptographic verification, secure communication, access control, and firmware recovery techniques.
-
-The objective is to ensure that only authentic firmware can be installed on an IoT device while protecting against firmware tampering, unauthorized updates, rollback attacks, and communication-based threats.
-
----
-
-## Key Features
-
-### Secure Firmware Verification
-
-* RSA-based digital signature verification
-* SHA-256 firmware integrity validation
-* Detection of tampered firmware images
-
-### Secure Update Distribution
-
-* HTTPS/TLS-protected firmware update server
-* Secure communication between device and update server
-* API-based firmware update checks
-
-### Access Control & Monitoring
-
-* Role-Based Access Control (RBAC)
-* Authorized update management
-* Audit logging of update activities
-
-### Firmware Protection
-
-* Rollback attack prevention
-* Firmware version validation
-* Recovery mode support for failed updates
+![Python](https://img.shields.io/badge/Python-3.x-blue)
+![Flask](https://img.shields.io/badge/Flask-Web%20Server-black)
+![IoT Security](https://img.shields.io/badge/IoT-Security-green)
+![TLS](https://img.shields.io/badge/TLS-HTTPS-success)
+![License](https://img.shields.io/badge/License-MIT-yellow)
 
 ---
 
-## Project Architecture
+## Project Overview
 
-Firmware Signing Process:
+This project demonstrates the implementation of a secure firmware update mechanism for IoT devices using modern security practices. It ensures that only trusted firmware is installed by combining cryptographic verification, secure communication, access control, audit logging, and firmware recovery techniques.
 
-1. Firmware image is created.
-2. SHA-256 hash is generated.
-3. Firmware is digitally signed using RSA private key.
-4. Firmware and signature are distributed through the secure update server.
+The project was developed as part of my Cybersecurity On-the-Job Training (OJT) to simulate a secure firmware deployment workflow commonly used in embedded and IoT environments.
 
-Firmware Verification Process:
+---
 
-1. Device downloads firmware.
-2. Firmware signature is verified using RSA public key.
-3. Integrity is validated using SHA-256.
-4. Valid firmware is accepted.
-5. Tampered firmware is rejected.
+## Objectives
+
+- Verify firmware authenticity using RSA Digital Signatures
+- Validate firmware integrity using SHA-256 hashing
+- Secure firmware delivery using HTTPS/TLS
+- Prevent rollback attacks
+- Implement Role-Based Access Control (RBAC)
+- Maintain audit logs
+- Support firmware recovery mode
 
 ---
 
 ## Technologies Used
 
-### Programming & Frameworks
+### Programming
 
-* Python
-* Flask
+- Python
+- Flask
 
-### Security Technologies
+### Security
 
-* OpenSSL
-* RSA Digital Signatures
-* SHA-256 Hashing
-* TLS/HTTPS
+- RSA Digital Signatures
+- SHA-256
+- TLS / HTTPS
+- RBAC
+- Audit Logging
 
-### Operating System
+### Environment
 
-* Kali Linux
-
-### Development Tools
-
-* Visual Studio Code
-* VirtualBox
+- Kali Linux
+- Visual Studio Code
+- VirtualBox
 
 ---
 
-## Project Structure
+## Repository Structure
 
 ```text
-secure-iot-firmware/
-├── firmware/
-├── keys/
-├── signatures/
-├── update_server/
-├── logs/
-├── scripts/
-├── screenshots/
-├── testing/
-└── reports/
+secure-firmware-update-iot/
+
+├── README.md
+├── LICENSE
+│
+├── reports/
+│   └── Final Project Report.pdf
+│
+├── source/
+│   ├── rbac_simulation.py
+│   ├── recovery_mode.py
+│   └── rollback_protection.py
+│
+├── evidence/
+│   ├── API_Testing/
+│   ├── Audit_Logs/
+│   ├── Firmware_Signing/
+│   ├── Flask_Server/
+│   ├── RBAC/
+│   ├── Recovery_Mode/
+│   ├── Rollback_Protection/
+│   ├── RSA_Key_Generation/
+│   ├── SHA256_Verification/
+│   ├── Signature_Verification/
+│   ├── Tampered_Firmware/
+│   ├── TLS_Certificates/
+│   └── Unauthorized_Access/
+│
+└── docs/
 ```
 
 ---
 
-## Security Mechanisms Implemented
+## Security Features Implemented
 
-### RSA Key Generation
-
-Generates public and private key pairs used for firmware signing and verification.
-
-### SHA-256 Integrity Verification
-
-Ensures firmware has not been modified during transmission or storage.
-
-### Digital Signature Verification
-
-Validates firmware authenticity before installation.
-
-### TLS Certificate Protection
-
-Protects firmware delivery using encrypted communication channels.
-
-### Role-Based Access Control (RBAC)
-
-Restricts update operations to authorized users.
-
-### Audit Logging
-
-Records update activities for monitoring and security analysis.
-
-### Rollback Protection
-
-Prevents installation of outdated or vulnerable firmware versions.
-
-### Recovery Mode
-
-Allows recovery when firmware validation fails.
+- RSA Key Generation
+- Firmware Digital Signature Verification
+- SHA-256 Integrity Verification
+- Secure HTTPS Firmware Distribution
+- TLS Certificate Configuration
+- Role-Based Access Control (RBAC)
+- Audit Logging
+- Rollback Protection
+- Recovery Mode
 
 ---
 
-## Testing Performed
+## Testing & Validation
 
-### Successful Verification Test
+The project includes practical testing and validation for:
 
-* Valid firmware accepted
-* Signature verification successful
+- RSA Key Generation
+- Firmware Signing
+- Signature Verification
+- SHA-256 Verification
+- TLS Certificate Generation
+- Flask HTTPS Server
+- API Testing
+- Unauthorized Access Detection
+- Audit Logging
+- Firmware Tampering Detection
+- Recovery Mode
+- Rollback Protection
+- RBAC Simulation
 
-### Tampered Firmware Test
-
-* Modified firmware detected
-* Verification failed as expected
-
-### Unauthorized Access Test
-
-* Unauthorized requests denied
-
-### Rollback Protection Test
-
-* Downgrade attempts blocked
-
-### Recovery Mode Test
-
-* Recovery procedure executed successfully
+Supporting screenshots are available in the **evidence/** directory.
 
 ---
 
-## Learning Outcomes
+## Challenges Faced
 
-Through this project, the following concepts were explored:
+During this project I worked through several practical challenges including:
 
-* Secure firmware lifecycle management
-* Cryptographic signing and verification
-* Firmware integrity protection
-* Secure update distribution
-* Access control implementation
-* Security monitoring and logging
-* IoT security best practices
+- Configuring HTTPS with Flask
+- Implementing firmware signature verification
+- Managing cryptographic keys
+- Organizing firmware validation workflow
+- Structuring project documentation and evidence
 
 ---
 
-## Future Enhancements
+## Key Learning Outcomes
 
-* ECC-based firmware signing
-* Hardware Security Module (HSM) integration
-* Secure Boot implementation using MCUboot
-* Delta firmware updates
-* Multi-device update management
-* Centralized logging using ELK Stack
-* Cloud-based firmware management
+This project strengthened my practical understanding of:
+
+- IoT Firmware Security
+- Public Key Cryptography
+- Secure Firmware Distribution
+- Firmware Integrity Verification
+- Secure Communication
+- Access Control
+- Security Documentation
+
+---
+
+## Future Improvements
+
+- Secure Boot Integration
+- ECC-based Digital Signatures
+- Hardware Security Module (HSM) Support
+- Delta Firmware Updates
+- Multi-device Update Management
+- Cloud-based Firmware Distribution
 
 ---
 
 ## Author
 
-Mohammad Haji
+**Mohammad Haji**
 
-MCA Graduate | Cybersecurity Enthusiast | Vulnerability Assessment & Web Security | Aspiring SOC Analyst
+MCA Graduate | Cybersecurity Enthusiast | Application Security | Mobile Security | IoT Security
+
+- GitHub: https://github.com/mohammadhaji7
+- LinkedIn: https://linkedin.com/in/mohammadhajiwork
+
+---
+
+**This project was developed for educational purposes to demonstrate secure firmware update mechanisms and IoT security best practices.**
