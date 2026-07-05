@@ -14,6 +14,28 @@
 ![License](https://img.shields.io/badge/License-MIT-yellow)
 
 ---
+Firmware Developer
+        │
+        ▼
+Generate Firmware
+        │
+        ▼
+SHA-256 Hash
+        │
+        ▼
+RSA Sign
+        │
+        ▼
+HTTPS Flask Server
+        │
+        ▼
+IoT Device
+        │
+        ▼
+Verify Signature
+        │
+        ▼
+Install Firmware
 
 ## 📖 Project Overview
 
