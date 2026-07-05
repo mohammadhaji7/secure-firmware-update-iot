@@ -123,7 +123,7 @@ Supporting screenshots are available in the **evidence/** directory.
 
 ---
 
-## Challenges Faced
+## Challenges Faced 
 
 During this project I worked through several practical challenges including:
 
